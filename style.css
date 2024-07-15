@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+::-webkit-scrollbar-thumb {
+    background-color: #83838398;
+}
+body {
+    height: 100vh;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.weather-input {
+    width: 25%;
+    position: fixed;
+    background-color: #78c1f3;
+    padding: 1rem 2.5rem;
+    inset: 0;
+}
+
+.weatherIcon {
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    display: block;
+    height: 25%;
+    margin: 2rem auto;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+
+}
+
+.input-group input {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    font-size: 15px;
+    border-radius: 6px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.input-group .converter {
+    position: absolute;
+    right: 45px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.input-group .fa-search{
+    position: absolute;
+    right: 15px;
+    color: #909090;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.weather-output {
+    width: 75%;
+    position: fixed;
+    inset: 0;
+    margin-left: 25%;
+    padding: 2rem 2rem 2rem 3rem;
+    overflow: auto;
+
+}
+
+.weather-input .feelasLike,
+.weather-input .description,
+.weather-input .date{
+    padding: 10px 0;
+
+}
+.weather-input .city{
+    padding: 8px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.temperature{
+    font-size: 5rem;
+    text-align: center;
+    display: flex;
+    font-weight: 300;
+}
+.temperature span {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.weather-output h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.highlight {
+    display: grid;
+    grid-template-columns: repeat(3, 305px);
+    grid-auto-flow: row;
+    row-gap: 1rem;
+    column-gap: 10px;
+}
+
+.highlight div {
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #78c1f3;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.forecast,
+.forecast1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      
+}
+.forecast2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+  }
+.forecast div,
+.forecast1 div,
+.forecast2 div {
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #78c1f3;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .forecast div p,
+  .forecast1 div p,
+  .forecast2 div p {
+    margin: -17px 0px 5px 0px;
+
+  }
+ .forecast div p .low,
+ .forecast1 div p .low,
+ .forecast2 div p .low{
+    margin-left: 50px;
+  } 
+   
+  .forecast div p i span,
+  .forecast1 div p i span,
+  .forecast2 div p i span {
+    font-weight: 300;
+    margin: 5px;
+  }
+
+.highlight i {
+    font-size: 45px;
+}
+
+.sun span {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
